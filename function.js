@@ -1,0 +1,3 @@
+function includeFooter() {
+    let footer
+}

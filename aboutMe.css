@@ -1,0 +1,92 @@
+img#sidebarImg{
+    display: none;
+      
+}
+
+.mainAboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+   
+    width: 100%;
+    margin-bottom: 10%;  
+    padding-right: 1rem;
+
+    background-color: rgba(173, 216, 230, 0.295);
+    
+}
+
+.myName {
+    font-family: cursive;
+    font-size: 2rem;
+    text-align: center;
+    color: purple;
+}
+
+.funFact {
+    width: 45%;
+    margin-top: 1rem;
+    padding: 0.4rem;
+    float: right; 
+    background-color: aqua;   
+   
+}
+
+@media screen and (min-width: 700px) {
+    .sidebar {
+        margin: 0;
+        width: 20rem;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+    
+    /* .sidebar a {}
+    .sidebar a.active {}
+    .sidebar a:hover:not(.active) {} */
+    .mainAboutMe {
+        width: 100%;
+        position: absolute;
+        margin-left: 50rem;
+        margin-top: 4rem;
+    }
+
+    img#sidebarImg {
+        display:block;
+        margin-left: 0;
+        padding-left:0;
+        height: 100%;
+        width: 20rem;
+        
+        
+    }
+
+    img#optionalTwo {
+        display: none;
+    }
+
+    .funFact {
+        width: 50%;
+        float:none;
+        margin-top: 1rem;
+        padding: 0.4rem;
+
+    
+    }
+
+    .textWhyLearning {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20rem;
+        margin-left: 30rem;
+    }
+    
+    /* body{
+        background-image: url(./image/20200813_090745.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        /* background-position-x: +4rem; 
+        background-position-y: -20rem;
+    } */
+
+}
