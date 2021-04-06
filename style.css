@@ -22,7 +22,7 @@
     margin-bottom: 2rem;
     padding: 1rem;
     width: 100%;
-    background-color: aquamarine;
+    background-color: lightgray;
     position: relative;
     height: auto;
     overflow: auto;
@@ -37,13 +37,13 @@
 
 .sidebar a.active {
     width: 80%;
-    background-color: blueviolet;
+    background-color: rgba(0, 0, 255, 0.61); 
     color: white;
 }
 
 .sidebar a:hover:not(.active) {
     width: 80%;
-    background-color: yellow;
+    background-color: lightskyblue;
     color: white;
 }
 
@@ -81,17 +81,34 @@
     .sidebar a.active {}
     .sidebar a:hover:not(.active) {} */
     .main {
-        width: 70%;
+        width: 60%;
         position: absolute;
-        margin-left: 20rem;
+        margin-left: 24rem;
         margin-top: 4rem;
+        border-radius: 5px;
+        background-color: rgba(173, 216, 230, 0.5);
+        font-size: 1.2rem;
     }
     .bodyIndex{
         background-image: url(./image/20200813_090745.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
-        /* background-position-x: +4rem; */
-        background-position-y: -20rem;
+        background-position-x: +4rem;
+        background-position-y: -18rem;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .logoSusan {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 4rem;
+        background-color: rgba(127, 255, 212, 0.774) ;
+        font-family: cursive;
+        font-size: 3rem;
+        color: rgba(0, 0, 255, 0.76);
+        border: 1 dotted gray;
+        
     }
 
 }
@@ -99,10 +116,11 @@
 
 footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 2rem;
+    height: 4rem;
     position: fixed;
     bottom: 0;
     background-color: aquamarine;
